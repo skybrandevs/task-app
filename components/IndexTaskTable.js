@@ -59,8 +59,9 @@ export default ({data, onUpdate}) => {
               status: (data.completed == 1 ?  <span className="badge badge-pill badge-success">Completed</span>
               : <span className="badge badge-pill badge-warning">Pending</span>),
               action : <div className='d-flex justify-content-around'>
-                            <Image src='/eye.svg'  className='cursor-pointer' height='20px' width='20px' />
-                            <Image src='/pencil.svg' onClick={()=> handleShow(data)} className='cursor-pointer' height='20px' width='20px' />
+                            <Image src='/delete.svg'  className='cursor-pointer' height='20px' width='20px' />
+                          
+                      <Image src='/pencil.svg' onClick={()=> handleShow(data)} className='cursor-pointer' height='20px' width='20px' />
                     </div>
             
             //   <span class="badge badge-pill badge-danger">Danger</span>
